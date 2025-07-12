@@ -11,7 +11,8 @@ MODEL_OPTIONS = [
 ]
 with st.sidebar:
     selected = st.selectbox("사용할 모델 선택", MODEL_OPTIONS)
-    
+
+
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 if not OPENAI_API_KEY:
